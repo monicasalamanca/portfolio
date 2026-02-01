@@ -1,0 +1,77 @@
+/* Design tokens: CSS variables
+   - Light theme in :root
+   - Dark theme overrides in .dark
+   - Use semantic naming (bg, fg, surface...) not “blue500”
+*/
+
+:root {
+  /* ---------- Color (semantic) ---------- */
+  --bg: 255 255 255;
+  --fg: 15 23 42; /* slate-900-ish */
+
+  --surface: 248 250 252; /* slate-50-ish */
+  --surface-2: 241 245 249; /* slate-100-ish */
+
+  --muted: 100 116 139; /* slate-500-ish */
+  --border: 226 232 240; /* slate-200-ish */
+
+  --primary: 37 99 235; /* blue-600-ish */
+  --primary-fg: 255 255 255;
+
+  --danger: 220 38 38; /* red-600-ish */
+  --danger-fg: 255 255 255;
+
+  /* ---------- Focus ring ---------- */
+  --ring: 59 130 246; /* blue-500-ish */
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  /* ---------- Shadow ---------- */
+  --shadow-sm: 0 1px 2px rgba(2, 6, 23, 0.06);
+  --shadow-md: 0 10px 25px rgba(2, 6, 23, 0.08);
+  --shadow-lg: 0 20px 45px rgba(2, 6, 23, 0.12);
+
+  /* ---------- Typography ---------- */
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    'Apple Color Emoji', 'Segoe UI Emoji';
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* ---------- Layout ---------- */
+  --container-max: 68rem; /* ~1088px */
+}
+
+/* Dark theme: add class="dark" on <html> */
+.dark {
+  --bg: 2 6 23; /* slate-950-ish */
+  --fg: 226 232 240; /* slate-200-ish */
+
+  --surface: 15 23 42; /* slate-900-ish */
+  --surface-2: 30 41 59; /* slate-800-ish */
+
+  --muted: 148 163 184; /* slate-400-ish */
+  --border: 51 65 85; /* slate-700-ish */
+
+  --primary: 96 165 250; /* blue-400-ish */
+  --primary-fg: 2 6 23;
+
+  --danger: 248 113 113; /* red-400-ish */
+  --danger-fg: 2 6 23;
+
+  --ring: 147 197 253; /* blue-300-ish */
+}
